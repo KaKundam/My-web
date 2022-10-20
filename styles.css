@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+path {
+  stroke: #ff0000;
+  stroke-width: 100;
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  fill-opacity: 0;
+}
+
+body {
+  background: url(https://pixabay.com/static/uploads/photo/2015/02/21/09/57/heart-644091_960_720.png);
+}
+
+.container-div {
+  position: absolute;
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  /* top: 25vh; */
+  height: 100%;
+  right: 0px;
+
+  text-align: center;
+
+  opacity: 0;
+  transition: 2s;
+}
+
+.top-bottom {
+  padding-top: 15vh;
+}
+
+.container {
+  background-color: mintcream;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.title {
+  color: pink;
+  font-family: 'Dancing Script', cursive;
+  font-size: 130px;
+  margin: auto;  
+  width: 100%;  
+  text-align: center;
+}
+
+.main_text {
+  padding-top: 50px;  
+  font-size: 30px;
+  margin: auto;  
+  width: 50%;  
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+}
+
+.cre {
+  top: 100px;
+  font-style: normal;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 300;
+}
+
+/* Responsive */
+/* Laptop 1175px */
+@media only screen and (max-width: 1175px) { 
+  .top-bottom {
+    padding-top: 20vh;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .main_text {
+    font-size: 26px;
+  }
+}
+
+/* Ipad 800px */
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .main_text {
+    font-size: 19px;
+  }
+}
+
+/* Big phone 490px */
+@media only screen and (max-width: 490px) {
+  .container {
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .main_text {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .cre {
+    font-size: small;
+  }
+}
+
+/* Averange phone 380px */
+@media only screen and (max-width: 380px) {
+  .container {
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .main_text {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+/* Broke af phone 320px */
+@media only screen and (max-width: 380px) {
+  .container {
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .main_text {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .cre {
+    font-size: x-small;
+  }
+}
